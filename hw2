@@ -1,0 +1,18 @@
+#plot ?????????
+plot(x=cars$speed, y=cars$dist, xlab="Speed", ylab="Distance", main="Speed vs. Distamce")
+
+#plot histgram
+par(mfrow=c(1,2))
+hist(cars$speed, xlab="Speed", main="Feequency of speed")
+hist(cars$dist, xlab="Distance", main="Feequency of Distance")
+
+#plot box 
+par(mfrow=c(1,2))
+boxplot(cars$speed, xlab="Speed", main="Feequency of speed")
+boxplot(cars$dist, xlab="Distance", main="Feequency of Distance")
+
+#plot bar
+par(mfrow=c(1,2))
+table(cars$speed)
+barplot(table(cars$speed), xlab="Speed", ylab="frequency", horize=FALSE, las=1, ces.name=0.3) 
+barplot(table(cars$dist), xlab="Distance", ylab="frequency", horize=FALSE, las=1, ces.name=0.3) 
